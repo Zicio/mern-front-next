@@ -1,8 +1,6 @@
 import "./globals.css";
 import React from "react";
-import { Roboto } from "@next/font/google";
-
-const font = Roboto({ weight: "400" });
+import Navbar from "~/components/Navbar";
 
 export default function RootLayout({
   children,
@@ -12,10 +10,10 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
-        <title>Main page</title>
+        <title>ZICIO BLOG</title>
       </head>
       <body>
-        <div className={font.className}>Layout</div>
+        <Navbar />
         {children}
       </body>
     </html>
