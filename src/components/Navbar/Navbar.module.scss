@@ -1,0 +1,11 @@
+.section {
+  @apply h-20 py-5 px-16 bg-pink-600 text-black font-bold flex justify-between items-center;
+
+  .title {
+    @apply uppercase text-2xl;
+  }
+
+  .button {
+    @apply text-lg;
+  }
+}
