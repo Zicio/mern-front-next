@@ -1,6 +1,6 @@
 import "./page.css";
 import { Roboto } from "@next/font/google";
-import { PostList } from "~/components/PostList/PostList";
+import { PostList } from "~/modules/PostList/PostList";
 import { IPost } from "~/types/post";
 
 const font = Roboto({ weight: "400" });
@@ -10,15 +10,17 @@ const Home = () => {
     {
       _id: "1",
       title: "Post",
-      text: "Lorem ipsum dolor sit amet",
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque, earum enim esse, facilis illo impedit ipsa",
       user: "Baba",
       viewCount: 0,
       tags: ["JS", "Next.JS", "SCSS"],
     },
   ];
   return (
-    <div className="container">
-      <PostList posts={posts} />
+    <div className="page">
+      <div className="container">
+        <PostList posts={posts} />
+      </div>
     </div>
   );
 };
