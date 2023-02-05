@@ -1,19 +1,19 @@
-import "./page.css";
-import { Roboto } from "@next/font/google";
-import { PostList } from "~/modules/PostList/PostList";
-import { IPost } from "~/types/post";
+import './page.css';
+import { Roboto } from '@next/font/google';
+import { IPost } from '~/types/post';
+import PostList from '~/modules/PostList/PostList';
 
-const font = Roboto({ weight: "400" });
+const font = Roboto({ weight: '400' });
 
 const Home = () => {
   const posts: IPost[] = [
     {
-      _id: "1",
-      title: "Post",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque, earum enim esse, facilis illo impedit ipsa",
-      user: "Baba",
+      _id: '1',
+      title: 'Post',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque, earum enim esse, facilis illo impedit ipsa',
+      user: 'Baba',
       viewCount: 0,
-      tags: ["JS", "Next.JS", "SCSS"],
+      tags: ['JS', 'Next.JS', 'SCSS'],
     },
   ];
   return (

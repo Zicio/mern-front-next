@@ -1,21 +1,21 @@
-import "./globals.css";
-import React from "react";
-import Navbar from "~/components/Navbar/Navbar";
+import './globals.css';
+import { ReactNode } from 'react';
+import Navbar from '~/components/Navbar/Navbar';
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="ru">
-      <head>
-        <title>ZICIO BLOG</title>
-      </head>
-      <body>
-        <Navbar />
-        {children}
-      </body>
-    </html>
-  );
-}
+  children: ReactNode;
+}) => (
+  <html lang="ru">
+    <head>
+      <title>ZICIO BLOG</title>
+    </head>
+    <body>
+      <Navbar />
+      {children}
+    </body>
+  </html>
+);
+
+export default RootLayout;

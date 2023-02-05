@@ -1,11 +1,13 @@
-"use client";
-import styles from "./Navbar.module.scss";
+'use client';
 
-const Navbar = () => (
+import { FC } from 'react';
+import styles from './Navbar.module.scss';
+
+const Navbar: FC = () => (
   <section className={styles.section}>
     <div className={styles.title}>Zicio Blog</div>
     <div>
-      <button className={styles.button}>Login</button>
+      <button type="submit" className={styles.button}>Login</button>
     </div>
   </section>
 );
