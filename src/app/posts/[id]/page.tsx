@@ -5,7 +5,7 @@ interface IFullPostProps {
 }
 
 const FullPost: FC<IFullPostProps> = ({ id }) => (
-  <div>
+  <div className="single-centered-container">
     Пост №
     {id}
   </div>

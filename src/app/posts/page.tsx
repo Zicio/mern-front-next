@@ -13,7 +13,10 @@ const PostsPage = () => {
     },
   ];
   return (
-    <PostList posts={posts} />
+    <div className="single-centered-container">
+      <PostList posts={posts} />
+    </div>
+
   );
 };
 

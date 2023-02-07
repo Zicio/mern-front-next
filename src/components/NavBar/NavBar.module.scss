@@ -1,8 +1,12 @@
 .section {
   @apply h-20 py-5 px-16 bg-pink-600 text-black font-bold flex justify-between items-center;
 
+  .menu {
+    @apply w-10 h-10 border-none;
+  }
+
   .title {
-    @apply uppercase text-2xl;
+    @apply font-main-title text-xl;
   }
 
   .button {

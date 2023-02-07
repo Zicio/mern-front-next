@@ -1,18 +1,23 @@
 import './globals.css';
 import { ReactNode } from 'react';
 import NavBar from '~/components/NavBar/NavBar';
+import { Merriweather } from '@next/font/google';
+
+const merriweather = Merriweather({
+  weight: '400',
+  fallback: ['system-ui'],
+  variable: '--merriweather-font',
+});
 
 const RootLayout = ({
   children,
 }: {
   children: ReactNode;
 }) => (
-  <html lang="ru">
+  <html lang="ru" className={`${merriweather.variable}`}>
     <body>
       <NavBar />
-      <div className="flex flex-col items-center mt-10 h-[calc(100vh-120px)] justify-center">
-        {children}
-      </div>
+      {children}
     </body>
   </html>
 );

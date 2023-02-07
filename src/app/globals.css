@@ -11,3 +11,7 @@
 body {
     background: rgb(51, 65, 85);
 }
+
+.single-centered-container {
+    @apply flex flex-col items-center mt-10 h-[calc(100vh-120px)] justify-center;
+}
