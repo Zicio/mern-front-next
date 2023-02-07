@@ -1,12 +1,13 @@
 import DefaultTags from '~/app/DefaultTags';
 
-const Head = () => (
+const HeadforPosts = () => (
   <>
     <DefaultTags />
     <head>
-      <title>ZICIO BLOG</title>
+      <title>ZICIO BLOG | posts №</title>
     </head>
   </>
+
 );
 
-export default Head;
+export default HeadforPosts;

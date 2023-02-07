@@ -1,9 +1,7 @@
-'use client';
-
 import { FC } from 'react';
-import styles from './Navbar.module.scss';
+import styles from './NavBar.module.scss';
 
-const Navbar: FC = () => (
+const NavBar: FC = () => (
   <section className={styles.section}>
     <div className={styles.title}>Zicio Blog</div>
     <div>
@@ -12,4 +10,4 @@ const Navbar: FC = () => (
   </section>
 );
 
-export default Navbar;
+export default NavBar;

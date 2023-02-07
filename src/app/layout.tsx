@@ -1,6 +1,6 @@
 import './globals.css';
 import { ReactNode } from 'react';
-import Navbar from '~/components/Navbar/Navbar';
+import NavBar from '~/components/NavBar/NavBar';
 
 const RootLayout = ({
   children,
@@ -8,12 +8,11 @@ const RootLayout = ({
   children: ReactNode;
 }) => (
   <html lang="ru">
-    <head>
-      <title>ZICIO BLOG</title>
-    </head>
     <body>
-      <Navbar />
-      {children}
+      <NavBar />
+      <div className="flex flex-col items-center mt-10 h-[calc(100vh-120px)] justify-center">
+        {children}
+      </div>
     </body>
   </html>
 );

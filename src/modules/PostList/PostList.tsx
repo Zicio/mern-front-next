@@ -1,5 +1,3 @@
-'use client';
-
 import { FC } from 'react';
 import { IPost } from '~/types/post';
 import PostItem from '~/components/PostItem/PostItem';

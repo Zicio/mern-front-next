@@ -1,5 +1,5 @@
 .card {
-  @apply p-3 border-2 border-black bg-pink-300 rounded-md w-80 relative;
+  @apply p-3 border-2 border-black bg-pink-300 rounded-md w-80 relative cursor-pointer;
 
   .delete {
     @apply p-[1px] text-red-600 text-2xl leading-none absolute top-1 right-1 rounded-xl hover:font-extrabold hover:bg-pink-200;
