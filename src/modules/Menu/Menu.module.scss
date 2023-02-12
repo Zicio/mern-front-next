@@ -1,0 +1,21 @@
+.menu {
+  @apply fixed w-screen h-screen top-20 left-0;
+
+  .blur {
+    @apply w-screen h-screen backdrop-blur-[2px] absolute left-1/4;
+  }
+
+  .menu__content {
+    @apply w-1/4 h-screen bg-slate-900 flex flex-col items-center p-4;
+
+    .menu__header {
+      @apply text-white text-lg border-b-2 border-white w-full text-center;
+    }
+
+    .menu__list {
+      @apply mt-4;
+    }
+  }
+
+
+}
