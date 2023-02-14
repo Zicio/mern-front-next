@@ -1,13 +1,27 @@
 {
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2020": true
+  },
   "extends": [
     "next/core-web-vitals",
     "airbnb",
-    "airbnb-typescript"
+    "airbnb-typescript",
+    "prettier"
   ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
+  "plugins": ["prettier", "@typescript-eslint"],
   "rules": {
+    "prettier/prettier": "error",
     "react/jsx-uses-react": "off",
     "react/jsx-key": "error",
     "react/react-in-jsx-scope": "off",
@@ -22,9 +36,7 @@
     "no-underscore-dangle": [
       "error",
       {
-        "allow": [
-          "_id"
-        ]
+        "allow": ["_id"]
       }
     ]
   }

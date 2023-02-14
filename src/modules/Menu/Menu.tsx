@@ -1,14 +1,14 @@
-import MenuItem from '~/components/MenuItem/MenuItem';
-import { IMenuItem } from '~/types/menuItem';
-import { FC } from 'react';
-import styles from './Menu.module.scss';
+// "use client";
+
+import MenuItem from "~/components/MenuItem/MenuItem";
+import { IMenuItem } from "~/types/menuItem";
+import { FC } from "react";
+import styles from "./Menu.module.scss";
 
 interface IMenuProps {
   title: string;
   items: IMenuItem[];
 }
-
-// TODO Создать store для добавления интерактивности sidebar Menu (связать кнопку в Navbar и Menu)
 
 const Menu: FC<IMenuProps> = ({ title, items }) => (
   <div className={styles.menu}>
