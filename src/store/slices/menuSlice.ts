@@ -4,19 +4,17 @@ const initialState = {
   value: false,
 };
 
-export const menuSlice = createSlice({
+const menuSlice = createSlice({
   name: "isOpenMenu",
   initialState,
   reducers: {
     toggleMenu: (state) => {
       // eslint-disable-next-line no-param-reassign
       state.value = !state.value;
+      return state;
     },
   },
 });
 
 export const { toggleMenu } = menuSlice.actions;
-
-const isOpenMenuReducer = menuSlice.reducer;
-
-export default isOpenMenuReducer;
+export default menuSlice.reducer;

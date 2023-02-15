@@ -1,21 +1,19 @@
 .menu {
-  @apply fixed w-screen h-screen top-20 left-0;
+  @apply fixed w-screen h-screen top-20 left-0 z-10;
 
   .blur {
     @apply w-screen h-screen backdrop-blur-[2px] absolute left-1/4;
   }
 
   .menu__content {
-    @apply w-1/4 h-screen bg-slate-900 flex flex-col items-center p-4;
+    @apply w-1/6 h-screen bg-slate-900 flex flex-col items-center p-4;
 
     .menu__header {
       @apply text-white text-lg border-b-2 border-white w-full text-center;
     }
 
     .menu__list {
-      @apply mt-4;
+      @apply mt-4 self-start grid grid-flow-row gap-4;
     }
   }
-
-
 }

@@ -14,7 +14,7 @@ const NavBar: FC = () => {
       <button
         type="button"
         className={styles.menu}
-        onClick={() => dispatch(toggleMenu)}
+        onClick={() => dispatch(toggleMenu())}
       >
         {isOpenMenu ? (
           <svg
@@ -27,7 +27,7 @@ const NavBar: FC = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M6 18L18 6M6 6l12 12"
+              d="M4 6h16M4 10h16M4 14h16M4 18h16"
             />
           </svg>
         ) : (
@@ -41,7 +41,7 @@ const NavBar: FC = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M4 6h16M4 10h16M4 14h16M4 18h16"
+              d="M6 18L18 6M6 6l12 12"
             />
           </svg>
         )}

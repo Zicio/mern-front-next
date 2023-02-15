@@ -36,8 +36,8 @@ const RootLayout = ({ children }: { children: ReactNode }) => (
       <MenuProvider>
         <NavBar />
         <Menu title="Menu" items={items} />
+        {children}
       </MenuProvider>
-      {children}
     </body>
   </html>
 );
